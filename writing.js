@@ -25,14 +25,14 @@ document.getElementById('essays').addEventListener('click', function(event) {
         notes.style.opacity = '0.3';
       });
 
-    document.querySelector('.labelEssays').style.display = ''; // 隐藏section-line
-    document.querySelector('.labelNotes').style.display = 'none'; // 隐藏section-line
-    document.querySelector('.section-line').style.display = 'none'; // 隐藏section-line
-    document.querySelector('.notes-container').style.display = 'none'; // 隐藏notes-container
-    document.querySelector('.essay-A').style.display = ''; // 隐藏notes-container
-    document.querySelector('.essay-B').style.display = ''; // 隐藏notes-container
-    document.querySelector('.essay-C').style.display = ''; // 隐藏notes-container
-    document.querySelector('.essay-D').style.display = ''; // 隐藏notes-container
+    document.querySelector('.labelEssays').style.display = ''; 
+    document.querySelector('.labelNotes').style.display = 'none';
+    document.querySelector('.section-line').style.display = 'none'; 
+    document.querySelector('.notes-container').style.display = 'none'; 
+    document.querySelector('.essay-A').style.display = '';
+    document.querySelector('.essay-B').style.display = ''; 
+    document.querySelector('.essay-C').style.display = ''; 
+    document.querySelector('.essay-D').style.display = ''; 
 
 });
 
