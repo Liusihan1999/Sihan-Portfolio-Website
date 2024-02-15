@@ -4,7 +4,7 @@ const notes = document.getElementById('notes');
 const all = document.getElementById('all');
 
 document.getElementById('essays').addEventListener('click', function(event) {
-    event.preventDefault(); // 阻止链接默认行为
+    event.preventDefault(); 
     essays.style.opacity = '1';
     all.style.opacity = '0.3';
     notes.style.opacity = '0.3';
@@ -12,7 +12,7 @@ document.getElementById('essays').addEventListener('click', function(event) {
         all.style.opacity = '1';
       });
       
-      // 鼠标离开时透明度变回 30%
+      
       all.addEventListener('mouseout', function() {
         all.style.opacity = '0.3';
       });
@@ -20,7 +20,7 @@ document.getElementById('essays').addEventListener('click', function(event) {
         notes.style.opacity = '1';
       });
       
-      // 鼠标离开时透明度变回 30%
+      
       notes.addEventListener('mouseout', function() {
         notes.style.opacity = '0.3';
       });
