@@ -1,0 +1,430 @@
+body{
+    background-color: #F7F9F8;
+    font-family: 'Anonymous Pro', Helvetica, sans-serif;
+    color: #061121;
+}
+#workname{
+    color: #0C22E9;
+}
+.name{
+    position: fixed;
+    margin-top: 0%;
+    width: 100%;
+    height: 60px;
+    background-color:#F7F9F8;
+    z-index: 1000;
+}
+.sihan{
+    position: relative;
+    width:fit-content;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid; 
+    
+    animation: typewriter 5s steps(9) infinite; 
+}
+.nav-container{
+    position: fixed;
+    top: 60px; /* 从 name 模块的底部开始 */
+    left: 0;
+    width: 180px;
+    height: calc(100vh - 1px); /* 计算剩余的视口高度 */
+    border-right: 2px solid #061121;
+    z-index: 1000;
+    
+}
+.nav-name{
+    padding: 20px;
+}
+.nav-selected-box{
+    position: relative;
+    width: 178px;
+    height: 102px;
+    background-color: #FFEB33;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.nav-unselected-box{
+    position: relative;
+    width: 0px;
+    height: 102px;
+    background-color: #FFEB33;
+    font-size: 18px;
+    transition: width 1s;
+}
+.nav-unselected-box:hover{
+    
+        width: 178px;
+   
+}
+.search-bar{
+    position: fixed;
+    top: 60px; /* 从 name 模块的底部开始 */
+    left: 180px;
+    width: 100%;
+    height: 30px;
+    /*background-color: #f510a9;*/
+    z-index: 1000;
+    padding-left: 20px;
+    padding-top: 2px;  
+    
+    
+}
+.search-bar2{
+    position: fixed;
+    top: 60px; /* 从 name 模块的底部开始 */
+    left: 180px;
+    width: 100%;
+    height: 30px;
+    background-color: #F7F9F8;
+    z-index: 999;
+    padding-left: 20px;
+    padding-top: 2px;  
+    opacity: 60%;
+}
+#showAllWorks{
+    position: relative;
+    color: #0C22E9;
+    opacity: 30%;
+    padding-left: 3px;
+    padding-right: 1px;
+    
+    margin-bottom: 0px;
+    margin-left: 10px;
+     
+}
+#showAllWorks:hover{
+    opacity: 100%;
+}
+#searchButton{
+    padding-top: 3px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 2px;    
+}
+#searchButton2{
+    padding-top: 3px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 2px;    
+}
+
+input[type="text"]{
+    margin-top: 3px;
+    padding-top: 5px;
+    padding-left: 5px;
+    color: #0C22E9;
+    
+}
+#searchButton:hover .path-fill {
+    fill:#0C22E9; /* 鼠标悬停时填充蓝色 */
+}
+#searchButton2:hover .path-fill {
+    fill:#0C22E9; /* 鼠标悬停时填充蓝色 */
+}
+
+form{
+    padding-bottom: 2px;
+    border-bottom: 1px solid #0C22E9;
+}
+.svg-stroke{
+    stroke: #0C22E9;
+}
+.work-container{
+    position: relative;
+    left: 200px;
+    width: 80%;
+    height:fit-content;
+    /*background-color: aqua;*/
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    z-index: 1;
+    
+}
+.work-container-each{
+    width: 290px;
+    height:220px;
+    background-color:#F7F9F8;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0px solid #FFEB33;
+    transition: 
+    border-top 0.5s;
+    
+}
+.work-container-each:hover{
+    
+    border-top: 20px solid #FFEB33;
+}
+.img-name-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    align-items: center;
+}
+.img-container-bitland{
+    width: 290px;
+    height:160px;
+    background-color: rgb(7, 138, 138);
+    background-image: url('../img/BitLand-small.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;   
+}
+.img-container-carbonuni{
+    width: 290px;
+    height:160px;
+    background-color: rgb(7, 138, 138);
+    background-image: url('../img/Carbonuni-small.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;  
+    
+}
+.img-container-entrance{
+    width: 290px;
+    height:160px;
+    background-color: rgb(7, 138, 138);
+    background-image: url('../img/entrance-small.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;  
+    
+}
+.img-container-petbot{
+    width: 290px;
+    height:160px;
+    background-color: rgb(7, 138, 138);
+    background-image: url('../img/Petbot-small.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;     
+}
+.img-container-storystream{
+    width: 290px;
+    height:160px;
+    background-color: rgb(7, 138, 138);
+    background-image: url('../img/storystream-small.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;     
+}
+.img-container-imgnetwork{
+    width: 290px;
+    height:160px;
+    background-color: rgb(7, 138, 138);
+    background-image: url('../img/imgnetwork-small.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;     
+}
+.img-container-boundlessflow{
+    width: 290px;
+    height:160px;
+    background-color: rgb(7, 138, 138);
+    background-image: url('../img/boundlessflow-small.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;     
+}
+
+.work-name{
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #061121;
+}
+.work-category{
+    color: #0C22E9;
+    padding: 1px;
+    border-bottom: 2px solid #F7F9F8;
+
+    margin-bottom: 2px;
+}
+
+
+
+@media(max-width:830px){
+    
+    .name{
+        height: 70px;
+        display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center;
+    
+    margin: auto;
+    padding-bottom: 20px;
+    
+
+    }
+    .sihan{
+        position: relative;
+        font-size: 24px;
+        margin: 0 auto;
+        
+        
+        position: relative;
+        width:fit-content;
+        font-size: 20px;
+       
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 1px solid; 
+        animation: typewriter 5s steps(9) infinite; 
+    }
+    .nav-container{
+        position: fixed;
+        top: 50px; 
+        left: 0;
+        width: 100%;
+        height: 20px; 
+        border-bottom: 2px solid #061121;
+        border-right: 0px;
+        z-index: 1000;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: end;
+        background-color: coral;
+    }
+    .nav-name{
+        height:fit-content;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .nav-selected-box{
+        font-size: 16px;
+        height: fit-content;
+        width: fit-content;
+        /*text-align: center;*/
+        padding: 4px;
+        flex-grow: 1;
+    }
+    .nav-unselected-box{
+        font-size: 16px;
+        height: fit-content;
+        width: fit-content;
+        padding: 4px;
+        flex-grow: 0;
+        background-color: #F7F9F8;
+        transition: flex-grow 1s;
+    }
+    .nav-unselected-box:hover{
+        flex-grow: 1;
+        background-color: #FFEB33;
+        width: fit-content;
+    }
+
+    
+    .search-bar{
+        position: fixed;
+        top: 70px; /* 从 name 模块的底部开始 */
+        left: 0px;
+        width: 100%;
+        height: 30px; 
+    }
+    .search-bar2{
+        position: fixed;
+        top: 70px; /* 从 name 模块的底部开始 */
+        left: 0px;
+        width: 100%;
+        height: 30px; 
+    }
+    .work-container{
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height:fit-content;
+        /*background-color: aqua;*/
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center; 
+        z-index: 1;
+    }
+    .work-container-each{
+        width: 340px;
+        height:250px;
+        background-color:#F7F9F8;
+        margin-bottom: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .img-container-bitland{
+        width: 340px;
+        height:190px;  
+    }
+    .img-container-carbonuni{
+        width: 340px;
+        height:190px;  
+    }
+    .img-container-petbot{
+        width: 340px;
+        height:190px;  
+    }
+    .img-container-entrance{
+        width: 340px;
+        height:190px;  
+    }
+    .img-container-storystream{
+        width: 340px;
+        height:190px;  
+    }
+    .img-container-imgnetwork{
+        width: 340px;
+        height:190px;  
+    }
+    .img-container-boundlessflow{
+        width: 340px;
+        height:190px;  
+    }
+   
+    
+}
+.work-category:hover{
+    cursor: pointer;
+    border-bottom: 2px solid #0C22E9;
+}
+@keyframes typewriter {
+    0%, 100% { width: 0; }
+    50% { width: 99px; }
+}
+footer{
+    margin-bottom: 40px;
+}
+
+/* .sihan {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid; 
+    width: 0;
+    animation: typewriter 5s steps(9) infinite; 
+} */

@@ -1,0 +1,160 @@
+#bitland-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img4 img5 img3 img3"
+    "img6 img7 img8 img9"
+    "img13 img13 img10 img11"
+    "img13 img13 img14 img12"
+    "img15 img16 img16 img16";
+} 
+#bitland-gallery .bitland-gallery-img{
+    width: 100%;
+    height:140px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+#bitland-gallery .img1{
+    grid-area: img1;
+    background-image: url(../img/bitland/img1.jpg);
+}
+#bitland-gallery .img2{
+    grid-area: img2;
+    background-image: url(../img/bitland/img2.jpg);
+}
+#bitland-gallery .img3{
+    grid-area: img3;
+    background-image: url(../img/bitland/img3.jpg);
+    height: 290px;
+}
+#bitland-gallery .img4{
+    grid-area: img4;
+    background-image: url(../img/bitland/img4.jpg);
+}
+#bitland-gallery .img5{
+    grid-area: img5;
+    background-image: url(../img/bitland/img5.jpg);
+}
+#bitland-gallery .img6{
+    grid-area: img6;
+    background-image: url(../img/bitland/img6.jpg);
+}
+#bitland-gallery .img7{
+    grid-area: img7;
+    background-image: url(../img/bitland/img7.jpg);
+}
+#bitland-gallery .img8{
+    grid-area: img8;
+    background-image: url(../img/bitland/img8.jpg);
+}
+#bitland-gallery .img9{
+    grid-area: img9;
+    background-image: url(../img/bitland/img9.jpg);
+}
+#bitland-gallery .img10{
+    grid-area: img10;
+    background-image: url(../img/bitland/img10.jpg);
+}
+#bitland-gallery .img11{
+    grid-area: img11;
+    background-image: url(../img/bitland/img11.jpg);
+}
+#bitland-gallery .img12{
+    grid-area: img12;
+    background-image: url(../img/bitland/img12.jpg);
+}
+#bitland-gallery .img13{
+    grid-area: img13;
+    background-image: url(../img/bitland/img13.jpg);
+    height: 290px;
+}
+#bitland-gallery .img14{
+    grid-area: img14;
+    background-image: url(../img/bitland/img14.jpg);
+}
+#bitland-gallery .img15{
+    grid-area: img15;
+    background-image: url(../img/bitland/img15.jpg);
+}
+#bitland-gallery .img16{
+    grid-area: img16;
+    background-image: url(../img/bitland/img16.jpg);
+}
+.bitland-gallery-img div{
+    width: 100%;
+    height:100%;
+    background-color: #F7F9F8;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+    
+}
+.bitland-gallery-img div:hover{
+    
+    opacity: 0.3;
+    
+}
+
+.img-window{
+    width: 100vw;
+    height:100vh;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-window img{
+    max-height: 80vh;
+    max-width: 80vw;
+    border: 2px solid #FFEB33;
+}
+
+/* next image */
+.img-btn-next{
+    display:block;
+    padding:6px 10px;
+    border-radius:4px;
+   
+    position:fixed;
+    top:48vh;
+    z-index:1001;
+    color:#FFEB33;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: padding 0.5s;
+    
+}
+.img-btn-next:hover{
+    
+    padding: 6px 5px;
+}
+.img-btn-prev{
+    display:block;
+    padding:6px 10px;
+    border-radius:4px;
+   
+    position:fixed;
+    top:48vh;
+    z-index:1001;
+    color:#FFEB33;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: padding 0.5s;
+    
+}
+.img-btn-prev:hover{
+    
+    padding: 6px 5px;
+}

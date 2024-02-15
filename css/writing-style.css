@@ -1,0 +1,435 @@
+body, html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.nav-bar{
+    position: fixed;
+    top:61px;
+    right:0px;
+    width:40%;
+    height:28px;
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3px;
+    align-items: center;
+    color: #0C22E9;
+}
+.label{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.unselected-item{
+    opacity: 40%;
+}
+
+#essays:hover{
+    opacity: 100%;
+}
+#notes:hover{
+    opacity: 100%;
+}
+
+.writing-category{
+    position: relative;
+    background-color: rgb(4, 179, 120);
+    margin-bottom: 2px;
+    right: 0px;
+    width: 45%;
+    z-index: 1001;
+}
+.writing-menu{
+    position: relative;
+    left: 240px;
+    width: 80%;
+    height:fit-content;
+    /*background-color: aqua;*/
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    z-index: 1;
+}
+.essay-container{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.essay-img-container{
+    height: 140px;
+    width:250px;
+    background-color: rgb(7, 138, 138);
+    
+    transition: width 0.5s;
+}
+.bg-modular{
+    background-image: url('../img/Inheritance-of-Modular.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;
+}
+.bg-room{
+    background-image: url('../img/The_Room_of _Ones_Own.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;
+}
+.bg-objects{
+    background-image: url('../img/The_Room_of _Ones_Own.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;
+}
+.bg-bloody{
+    background-image: url('../img/bloody.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;
+}
+.bg-dracula{
+    background-image: url('../img/Dracula.jpg'); /* 这里设置您的图片路径 */
+    background-size: cover; /* 使背景图片覆盖整个容器 */
+    background-position: center; /* 背景图片居中 */
+    background-repeat: no-repeat;
+}
+
+.essay-img-container:hover{
+    width: 280px;
+}
+.essay-info{
+    height:140px;
+    width:70%;
+    margin-left: 30px;
+}
+.year{
+    color: #0C22E9;
+    width: fit-content;
+}
+.title{
+    font-size: 30px;
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+ 
+.breif{
+    width:fit-content;
+    line-height: 1.2;
+    padding-top: 20px;
+}
+.section-line{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    width:85%;
+    height:3px;
+    margin-right:40px;
+    background-color: #FFEB33;
+}
+.notes-container{
+    width: 90%;
+    height:fit-content;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+    z-index: 1;
+}
+.notes-container-each{
+    width: fit-content;
+    height:fit-content;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    border: 1px solid #0C22E9;
+    transition: 
+        margin-left 0.5s,
+        margin-right 0.5s,
+        margin-bottom 0.5s;
+}
+.notes-container-each:hover{
+    margin-bottom: 40px;
+    margin-left: 50px;
+    background-color: #FFEB33;
+    border: 1px solid #0C22E9;
+}
+
+
+.notes-name{
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    
+    color: #061121;
+}
+.note-title{
+    font-size: 25px;
+}
+.note-date{
+    font-size: 12px;
+    padding-bottom: 3px;
+    color: #0C22E9;
+}
+.search-bar3{
+    position: fixed;
+    top: 60px; /* 从 name 模块的底部开始 */
+    left: 180px;
+    width: 100%;
+    height: 30px;
+    background-color: #F7F9F8;
+    z-index: 999;
+    padding-left: 20px;
+    padding-top: 2px;  
+    opacity: 60%;
+}
+
+@media(max-width:830px){
+    .nav-bar{
+        top: 96px;
+        width: 90%;
+    }
+    .writing-menu{
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height:fit-content;
+        
+        padding-top: 130px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center; 
+        align-items: self-start;
+        z-index: 1;
+    }
+    .label{
+        padding-left: px;
+    }
+    .essay-container{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+    }
+   
+
+    .essay-img-container{
+        
+        height: 50vw;
+        max-height: 300px;
+        width:100%;
+        max-width: 450px;
+        background-color: rgb(7, 138, 138);
+       
+        border-bottom: 0px solid #F7F9F8;
+        transition: 
+        height 1s,
+        margin-bottom 0.5s,
+        border-bottom 0.5s ;
+    }
+    .essay-img-container:hover{
+        height: 60vw;
+        margin-bottom: 20px;
+        border-bottom: 10px solid #F7F9F8;
+        width:100%;
+    }
+    .nav-bar{
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .search-bar3{
+            position: fixed;
+            top: 70px; /* 从 name 模块的底部开始 */
+            left: 0px;
+            width: 100%;
+            height: 50px;  
+    }
+    .essay-info{
+        
+        height:140px;
+        width:100%;
+        max-width: 450px;
+        margin-left: 0px;
+        padding-left: 20px;
+    }
+    .year{
+        padding-top: 10px;
+    }
+    .title{
+        padding-top: 0px;
+        padding-bottom: 30px;
+        font-size: 20px;
+    }
+    .breif{
+        padding-top: 15px;
+    }
+    .section-line{
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        align-self:center;
+        width:95%;
+        height:3px;
+        background-color: #FFEB33;
+    }
+    button{
+        padding-top: 3px;
+        padding-bottom: 1px;
+        padding-left: 3px;
+        padding-right: 2px;
+       
+    }
+    .notes-container{
+        align-self: center;
+    }
+    .notes-container-each{
+        align-self: center;
+        height:fit-content;
+        width: fit-content;
+        padding: 10px; 
+        background-color: #F7F9F8;
+        transform: 
+        /* padding 1s, */
+        background-color 1s,
+        border 1s;
+    }
+    .notes-container-each:hover{
+        margin-bottom: 40px;
+        margin-left: 40px;
+        background-color: #FFEB33;
+        /* padding: 15px; */
+        border: 1px solid #0C22E9;
+    }
+    .notes-img-container{
+        display: none;
+    }
+    
+}
+
+/* popup block */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1003; /* Sit on top */
+    left: 0;
+    top: 0px;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    top: 50px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+    z-index: 1003;
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    
+    color: #0C22E9;
+    float: right;
+    padding: 10px;
+    
+  }
+  
+  .close:hover,
+  .close:focus {
+    
+    
+    cursor: pointer;
+  }
+  
+  .modal-scroll-content {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 80px;
+    overflow-y: scroll;
+    height: fit-content;
+
+  }
+  .modal-scroll-content > * {
+    
+   
+    margin-top: 5px;
+}
+  
+  /* notesdetail-the reaserch of room  */
+  .notes-room-pic1{
+    position: relative;
+    
+    height: 55vw;
+    width: 75vw;
+    background-image: url('../img/notes-room/room-mordern.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    transition: 
+    background-image 1s;   
+   }
+
+
+.notes-room-pic2{
+    position: relative;
+    
+    height: 55vw;
+    width: 75vw;
+    background-image: url('../img/notes-room/room-jobs-pic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    
+    transition: 
+    background-image 1s;
+    
+}
+.notes-room-pic2:hover{
+    background-image: url('../img/notes-room/room-jobs.jpg');
+    
+}

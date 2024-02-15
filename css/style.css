@@ -1,0 +1,110 @@
+body{
+    background-color: black;
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+    color:aliceblue;
+}
+/* font: 'Anonymous Pro' 'Roboto Mono'*/
+
+
+.h1{
+    /*width: 100%;*/
+    position: relative;
+    margin-top: 54px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 85px;
+    color: #FFEB33;
+    font-weight:lighter;
+    /*height: calc(100vh - 121px);*/
+}
+@media(max-width:830px){
+    .h1{
+        margin-top: 120px;
+        font-size: 45px;
+    }
+}
+.navigation-all{
+    display: flex; /* 设置为 Flex 容器 */
+    flex-direction: column;/* 子元素垂直排列 */
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-right: 32px;
+    height: 50vh;
+    
+    font-family: 'Anonymous Pro', Helvetica, sans-serif;
+    font-size: 26px;
+    color: #F7F9F8;
+    /*background-color: #FFEB33;*/
+}
+@media(max-width:830px){
+    .navigation-all{
+        flex-direction: row; 
+        justify-content: space-between;
+        font-size: 18px;
+    }
+}
+.nav-container{
+    height: 30px;
+    width: 0px;
+    padding-left: 0px;
+    padding-right:0px;
+    display: flex;
+    align-items: center;
+    color:#F7F9F8;
+    background-color:  #FFEB33;
+    transition: 
+    padding-left 1s,
+    padding-right 1s,
+    width 1.5s;
+    
+}
+.word{
+    padding-left: 2px;
+}
+.nav-container:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 250px;
+    color: #061121;
+    
+}
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100; /* 确保视频在内容下方 */
+  }
+
+  .fullscreen-bg video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+  }
+@media(max-width:830px){
+    .nav-container{
+        height: 30px;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        color:#F7F9F8;
+        background-color: transparent;
+        padding: 10px;       
+        
+    }
+    .nav-container:hover {
+        align-items: center;
+        padding: 10px;
+        width: fit-content;
+        color: #061121;
+        background-color: #FFEB33;
+    }
+}

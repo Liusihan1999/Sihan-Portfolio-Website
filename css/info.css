@@ -1,0 +1,146 @@
+body{
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+}
+.info-container{
+    position: relative;
+    left: 240px;
+    width: 80%;
+    height:fit-content;
+    /*background-color: aqua;*/
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    z-index: 1;
+}
+.my-photo{
+    width: 300px;
+    height: 300px;
+    background-image: url('../img/Sihan-photo.png'); /* 替换为你的图片地址 */
+    background-size: cover; /* 确保图片覆盖整个容器，可能会被裁剪来保持比例 */
+    background-position: center;
+    filter: blur(2px);
+    transition: filter 0.3s ease;
+}
+
+.my-photo:hover {
+    filter: blur(0);
+}
+  
+h1{
+    padding-top: 10px;
+    font-family: 'Roboto Mono', Helvetica, sans-serif;
+    filter: blur(0.8px);
+    transition: filter 0.3s ease;
+    font-size: 45px;
+}
+h1:hover{
+    filter: blur(0); 
+}
+.download{
+    color: #0C22E9;
+    
+    font-family: 'Anonymous Pro', Helvetica, sans-serif;
+    padding-top: 30px;
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; 
+}
+.download-item{
+    opacity: 50%;
+}
+.download-item:hover{
+    opacity: 100%;
+}
+.text{
+    padding-top: 30px;
+    width:90%;
+}
+.more{
+    width: fit-content;
+    color: #0C22E9;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.more:hover{
+    border-bottom: 1px solid #0C22E9;
+}
+.line{
+    margin-top: 20px;
+    background-color: #FFEB33;
+    height:2px;
+    width:90%;
+}
+.contect{
+    margin-bottom: 30px;
+}
+.contect-t{
+    margin-top: 10px;
+    font-size: 25px;
+    
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start; 
+    padding: 10px 2px 2px 2px;
+}
+.background{
+    margin-left: 30px;
+    
+    background-color: #FFEB33;
+}
+
+
+@media(max-width:830px){
+    .info-container{
+        position: relative;
+        margin-left:5px;
+        margin-right: 5px;
+        left: 0px;
+        width: fit-content;
+        height:fit-content;
+        /* background-color: aqua; */
+        padding-top: 60px;
+        /* display: flex;
+        flex-direction: column; */
+        align-items: center;
+        /* flex-wrap: nowrap;
+        justify-content: space-around;  */
+        z-index: 1;
+    }
+    .my-photo{
+        margin-top: 30px;
+        width: 100%;
+        height: 50vh;
+        filter: blur(2px);
+        transition: filter 0.3s ease;
+    }
+    .download{
+        color: #0C22E9;
+        /* background-color: #FFEB33; */
+        font-family: 'Anonymous Pro', Helvetica, sans-serif;
+        padding-top: 30px;
+        width: 300px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .download-item{
+        margin-bottom: 10px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .contect{
+        width:90%;
+    }
+}
+/* carousel */
